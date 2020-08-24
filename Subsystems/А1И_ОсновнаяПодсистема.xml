@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_АнализПрав</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ГенераторКодаМеханизмов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ДымовоеТестирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_МенеджерПакетов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

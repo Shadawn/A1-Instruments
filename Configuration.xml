@@ -52,7 +52,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Коллектив программистов "А1"</Vendor>
-			<Version>2020-08-21</Version>
+			<Version>2020-08-24</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -66,10 +66,11 @@
 			<Catalog>Пользователи</Catalog>
 			<DataProcessor>А1И_АнализПрав</DataProcessor>
 			<DataProcessor>А1И_ГенераторКодаМеханизмов</DataProcessor>
+			<DataProcessor>А1И_ДымовоеТестирование</DataProcessor>
 			<DataProcessor>А1И_ЗапускПодПользователем</DataProcessor>
 			<DataProcessor>А1И_КонсольЗапросов</DataProcessor>
+			<DataProcessor>А1И_МенеджерПакетов</DataProcessor>
 			<DataProcessor>А1И_ТестированиеМеханизмов</DataProcessor>
-			<DataProcessor>А1И_ДымовоеТестирование</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
