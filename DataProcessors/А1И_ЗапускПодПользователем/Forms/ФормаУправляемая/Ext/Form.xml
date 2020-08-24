@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Пользователь" id="1">
+			<DataPath>Объект.Пользователь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ЗначениеПароля" id="4">
+			<DataPath>Объект.ЗначениеПароля</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗначениеПароляКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЗначениеПароляРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СтрокаЗапуска" id="7">
+			<DataPath>Объект.СтрокаЗапуска</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СтрокаЗапускаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СтрокаЗапускаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Задержка" id="10">
+			<DataPath>Объект.Задержка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗадержкаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗадержкаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Button name="Запустить1С" id="13">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Запустить1С</CommandName>
+			<ExtendedTooltip name="Запустить1СРасширеннаяПодсказка" id="14"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.А1И_ЗапускПодПользователем</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Запустить1С" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить1 С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить1 С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Запустить1С1</Action>
+		</Command>
+	</Commands>
+</Form>

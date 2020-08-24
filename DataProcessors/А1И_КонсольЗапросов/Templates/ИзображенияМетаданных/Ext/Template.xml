@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>1</size>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>13</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>0</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>1</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>1</zOrder>
+		<pictureIndex>1</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>14</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>1</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>2</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>2</zOrder>
+		<pictureIndex>2</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>15</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>2</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>3</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>3</zOrder>
+		<pictureIndex>3</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>16</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>3</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>4</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>4</zOrder>
+		<pictureIndex>4</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>17</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>4</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>5</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>5</zOrder>
+		<pictureIndex>5</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>18</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>5</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>6</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>6</zOrder>
+		<pictureIndex>6</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>19</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>6</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>7</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>7</zOrder>
+		<pictureIndex>7</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>20</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>7</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>8</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>8</zOrder>
+		<pictureIndex>8</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>21</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>8</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>9</endRow>
+		<endRowOffset>3</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>0</endColumn>
+		<endColumnOffset>48</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>9</zOrder>
+		<pictureIndex>9</pictureIndex>
+	</drawing>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>1</defaultFormatIndex>
+	<height>10</height>
+	<vgRows>10</vgRows>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>Булево</name>
+		<drawingID>16</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>Дата</name>
+		<drawingID>15</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>ЛюбаяСсылка</name>
+		<drawingID>18</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>МоментВремени</name>
+		<drawingID>21</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>СписокЗначений</name>
+		<drawingID>20</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>Строка</name>
+		<drawingID>14</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>ТаблицаЗначений</name>
+		<drawingID>19</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>УникальныйИдентификатор</name>
+		<drawingID>17</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>Число</name>
+		<drawingID>13</drawingID>
+	</namedItem>
+	<format>
+		<width>72</width>
+	</format>
+	<picture>
+		<index>0</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////tYdDtIZEtIZEtIZEtYdD////////////////
+////////////////AAAA////////tIZE////////////tIZE////////AAAAAAAA
+z8/P////////////AAAA////////tIZE////y6hvuYpAtIZE////////AAAA////
+AAAA////////////AAAA////////tIZEwJdZ////tIZEtIZE////////////////
+AAAA////////////AAAA////////tIZEtIZE////wJdZtIZE////////////AAAA
+5OTk////////////AAAA////////tIZEuYpAy6hv////tIZE////////////////
+AAAA////////////AAAA////////tIZE////v448////tIZE////////AAAA////
+AAAA////////AAAAz8/P////////tIZE////////////tIZE////////AAAAAAAA
+z8/P////////////////////////uYpAuYpAtIZEtIZEtYdD////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<picture>
+		<index>1</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////s7OzAAAA
+AAAA5OTk////////////////////////////////////////////////AAAA////
+////AAAA////////////////////////////////////////////////AAAA////
+////////////////////////////////////////////////////////AAAA////
+////////////////////////////////////8ejbtIZEuYpA9/Ls////AAAA////
+////AAAA////////////////////////////tIZE////////uYpA////s7OzAAAA
+AAAA5OTk////////////////////////////tIZE////////tIZE////////////
+////////////s7OzAAAAAAAA////AAAA////tIZE////////uYpA////////////
+////////////AAAA////////AAAA////////tIZEuYpAuYpA/Pr3////////////
+////////////AAAA////////AAAA////////tIZE////////////////////////
+////////////v7+/AAAAAAAAAAAA////////tIZE////////////////////////
+////////////////////////AAAA////////uYpA////////////////////////
+////////////////AAAAAAAAxMTE////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<picture>
+		<index>2</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////n6OegIN5f4mGfImGe4eGeYeGeYeGeYeGeYeGeYeGd4aFd394lJ+d
+////////////p6eatN76v+P7z+r8z+r8z+r8z+r8z+r8z+r8z+r8z+r8z+r8eX96
+////////////qa2kotb5odb4UnTwMErsMErsapLyotX4UnTwMErsUnTw0uv8e4aE
+////////////ra6lqtn5qtr5qtr5qtr5qtr5MUrsq9n5qtn6MUrsqtn51+38foeF
+////////////sLCltd76tN76td76tN76tN/6Mkvttd/6td76Mkvttd/52+/9gIiF
+////////////tbKlwOT7wOT6weT7XXnxM0vtfJr0wOT7weT7M0vtwOP64fL9g4qF
+////////////tbKlzen8zen8zen8zen8zen7NEztzen7zen8NEztzen75/T+g4qF
+////////////tbKl2u782u/82u782e782e78Nkzt2e79Z33xNkzt2u/97ff+g4qF
+////////////tbKl2u782u/8Z33xNkztNkztiqD12e79obj3Nkzt2u/97ff+g4qF
+////////////tbKl5fT95fP95fT+5fT95fT95fP95fT95fP95fT95fP98/n+g4qF
+////////////tbKlz9bbz9fbz9fbz9fbz9fbz9fbz9fbz9fbz9fbz9bb6Ozug4qF
+////////////mLvLZ6vbZ6vbZ6vbZ6vbZ6vbZ6vbZ6vbZ6vbZ6vbZ6vbZ6vbf6W4
+////////////m7zLkdX7kdX7MVaBfrbb3PL+kdX7kdX7MVaBfrbb3PL+kdX7gaa4
+////////////oba8tej/tej/hbrcj8Xm1PL/tej/tej/hbrcj8Xm1PL/tej/gpym
+////////////ztjauc3VrMzcrMzcq8zcq8zcq8zcq8zcq8zcq8zcqsvctczVydXa
+////////</picture>
+	</picture>
+	<picture>
+		<index>3</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////////////c6qFMHpJL3VFLm5EFFssF10uK2g/H1wzJV04F1MsLmE/
+cpV9////////////////MIlN////////////////////////////////////////
+LmE/////////c6qFMHpJGGkxLm5EFFssF10uK2g/H1wzJV04F1MsLmE/cpV9////
+LmdA////////MIlN////////////////////////////////////////LmE/////
+L2xC////////MJFR////////////////////////////////////////LmdA////
+L3NF////////MJhS////////////xNPJFE4nxNPJ////////////////L2xC////
+FWIu////////MJ1V////////xNPJEm0vGJdCEm0vxNPJ////////////L3NF////
+FWMv////////F5FA////xNPJFYU6HKRGHbdQGJdCEm0vxNPJ////////FWIu////
+FWQv////////F5JA////FYU6HaVHHbdQ////FL07GJdCEm0vxNPJ////FWMv////
+Fmkx////////F5JA////Hr1SHr5T////////////HbdQGJdCFYU6////FWQv////
+MHtJ////////GJVC////////////////////////////HbdQHbZP////Fmkx////
+MINL////////MaJX////////////////////////////////////////Fm4zMJFQ
+c7CI////////MaJX////////////////////////////////////////MINL////
+////////////dMGOMaJXMaJXMKBWF5NBGpRDL5tSI5JHJ5JLGoo/MJFQc7CI////
+////////////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<picture>
+		<index>4</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////a2tra2tr////////a2tra2tra2tra2trmZmZ////
+////////////////////////a2tra2tr////////a2tra2tr////////tbW1q6ur
+////////////////////////a2tra2tr////////a2tra2tr////////////a2tr
+1tbW////////////////////a2tra2tr////////a2tra2tr////////////a2tr
+a2tr////////////////////a2tra2tr////////a2tra2tr////////////a2tr
+a2tr////////////////////a2tra2tr////////a2tra2tr////////////a2tr
+ZWVl////////////////////a2tra2tr////////a2tra2tr////////////a2tr
+v7+/////////////////////a2tra2tr////////a2tra2tr////////paWlpaWl
+////////////////////////a2tra2tr////////a2tra2tra2tra2trnKWl////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<picture>
+		<index>5</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////0rym////////////////////////////////////////
+////////////////0rymmWYz0rym////////////////////////////////////
+////////////0rymmWYzmWYzmWYz0rym////////////0rymmWYzmWYzmWYzmWYz
+////////0rymmWYzmWYzmWYzmWYzmWYz0rym////////////0rymmWYzmWYzmWYz
+////////////////////mWYz////////////////////////////tJFtmWYzmWYz
+////////////////////mWYz////////////////////////vJx8////0rymmWYz
+////////////////////mWYz////////////////////vJx8////////////0rym
+////////////////////mWYz////////////////vJx8////////////////////
+////////////////////mWYz////////////vJx8////////////////////////
+////////////////////mWYz////////vJx8////////////////////0rym////
+////////////////////mWYz////vJx8////////////////////////mWYz0rym
+////////////////////mWYzvJx8////////////////////////////mWYzmWYz
+0rym////////////////mWYzmWYzmWYzmWYzmWYzmWYzmWYzmWYzmWYzmWYzmWYz
+mWYz0rym////////////////////////////////////////////////mWYzmWYz
+0rym////////////////////////////////////////////////////mWYz0rym
+////////////////////////////////////////////////////////0rym////
+////////</picture>
+	</picture>
+	<picture>
+		<index>6</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////6+vrk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OT
+k5OT6+vrk5OT5eXl39/f39/f39/fsrKy39/f39/f39/f39/fsrKy39/f39/f39/f
+5eXlk5OTk5OTu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7
+u7u7k5OTk5OT8fHx7e3t7e3t7e3ttra27e3t7e3t7e3t7e3ttra27e3t7e3t7e3t
+8fHxk5OTk5OTu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7
+u7u7k5OTk5OT////////////////u7u7////////////////u7u7////////////
+////k5OTk5OTu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7
+u7u7k5OTk5OTu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7
+u7u7k5OTk5OT////////////////u7u7////////////////u7u7////////////
+////k5OTk5OTu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7
+u7u7k5OTk5OT////////////////u7u7////////////////u7u7////////////
+////k5OTk5OTu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7
+u7u7k5OTk5OT////////////////u7u7////////////////u7u7////////////
+////k5OT6+vrk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OT
+k5OT6+vr////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<picture>
+		<index>7</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////6OjohoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaG////
+////////////////u7u74ODg19fXyMjIxsbGxsbGxsbGxsbGxsbG0dHRhoaG////
+////////////////u7u74+Pj2tra2tra2tra2tra2tra2tra2tra4+PjhoaG////
+////////////////u7u74+PjmJiYwaNw2trawqZ3xal+xal+wqZ34+PjhoaG////
+////////////////u7u74+Pj2tra2tra2tra2tra2tra2tra2tra4+PjhoaG////
+////////////////u7u75eXlmJiYw6Nr39/fxqZ0yKp8yKp8xqZ05eXlhoaG////
+////////////////u7u78fHx7e3t7e3t7e3t7e3t7e3t7e3t7e3t8fHxhoaG////
+////////////////u7u7////k5OT1aVQ////2Klc3K5o3K5o2Klc////hoaG////
+////////////////u7u7////////////////////////////////////hoaG////
+////////////////u7u7////k5OT1aVQ////2Klc3K5o3K5o2Klc////hoaG////
+////////////////u7u7////////////////////////////////////hoaG////
+////////////////u7u7////k5OT1aVQ////2Klc3K5o3K5o2Klc////hoaG////
+////////////////u7u7////////////////////////////////////hoaG////
+////////////////u7u7////////////////////////////////////hoaG////
+////////////////8vLyu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7////////
+////////////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<picture>
+		<index>8</index>
+		<picture tx="143" ty="15">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////////tLz4ZXXxtLz4////////////////////////gXdovrmy////
+////////////////ZXXxFxeWbm6Uk5OTk5OTk5OTk5OTk5OTk5OTfXlySjwngXdo
+////////////////tLz4bm6UZXXx////////////////////////gXdovrmy////
+////////////////////k5OT////////////////////////////////////////
+////////////////////k5OT////////////////////////////////////////
+////////////////////k5OT////////////////////////////////////////
+////////////////////k5OT////////////////////////////////////////
+////////////////////k5OT////////////////////////////////////////
+////////////////////k5OT////////////////////////////////////////
+////////////////gXdok5OTgXdo////////////////////////////////////
+////////////////vrmySjwnvrmy////////////////////////////////////
+////////////////////gXdo////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////</picture>
+	</picture>
+	<textDirection>LeftToRight</textDirection>
+</document>

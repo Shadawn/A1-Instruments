@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьТесты" id="41">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьТесты</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьТестыРасширеннаяПодсказка" id="42"/>
+			</Button>
+			<Button name="ФормаВыполнитьТесты" id="43">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьТесты</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьТестыРасширеннаяПодсказка" id="44"/>
+			</Button>
+			<Button name="ФормаВыполнитьТекущийТест" id="45">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьТекущийТест</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьТекущийТестРасширеннаяПодсказка" id="46"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаТестов" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаТестов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаТестовКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаТестовКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ТаблицаТестовРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаТестовСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаТестов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаТестовСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаТестовСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаТестовСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаТестов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаТестовСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаТестовСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаТестовУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаТестов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаТестовУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаТестовУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаТестовИмя" id="17">
+					<DataPath>ТаблицаТестов.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТестовИмяКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаТестовИмяРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаблицаТестовИмяОбъектаМетаданных" id="20">
+					<DataPath>ТаблицаТестов.ИмяОбъектаМетаданных</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТестовИмяОбъектаМетаданныхКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаТестовИмяОбъектаМетаданныхРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТаблицаТестовПредставление" id="23">
+					<DataPath>ТаблицаТестов.Представление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТестовПредставлениеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаТестовПредставлениеРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаТестовСсылка" id="26">
+					<DataPath>ТаблицаТестов.Ссылка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТестовСсылкаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаТестовСсылкаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаТестовВыполнен" id="29">
+					<DataPath>ТаблицаТестов.Выполнен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаТестовВыполненКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаТестовВыполненРасширеннаяПодсказка" id="31"/>
+				</CheckBoxField>
+				<CheckBoxField name="ТаблицаТестовОшибка" id="32">
+					<DataPath>ТаблицаТестов.Ошибка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаТестовОшибкаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаТестовОшибкаРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаТестовТипОшибки" id="35">
+					<DataPath>ТаблицаТестов.ТипОшибки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТестовТипОшибкиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаТестовТипОшибкиРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТаблицаТестовОписаниеОшибки" id="38">
+					<DataPath>ТаблицаТестов.ОписаниеОшибки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаТестовОписаниеОшибкиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаблицаТестовОписаниеОшибкиРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.А1И_ДымовоеТестирование</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаТестов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица тестов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Класс" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Класс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяОбъектаМетаданных" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя объекта метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Выполнен" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ошибка" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипОшибки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеОшибки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьТесты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить тесты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить тесты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьТесты</Action>
+		</Command>
+		<Command name="ВыполнитьТесты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тесты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тесты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьТесты</Action>
+		</Command>
+		<Command name="ВыполнитьТекущийТест" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang/>
+					<v8:content>Выполнить текущий тест</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить текущий тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang/>
+					<v8:content>Выполнить текущий тест</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить текущий тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьТекущийТест</Action>
+		</Command>
+	</Commands>
+</Form>

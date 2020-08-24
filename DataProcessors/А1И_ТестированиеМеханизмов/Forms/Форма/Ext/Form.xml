@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПоказатьОшибки" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПоказатьОшибки</CommandName>
+				<ExtendedTooltip name="ПоказатьОшибкиРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ИсправитьОшибки" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИсправитьОшибки</CommandName>
+				<ExtendedTooltip name="ИсправитьОшибкиРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="ТаблицаОшибок" id="5">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаОшибок</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаОшибокКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="ТаблицаОшибокКоманднаяПанель" id="7"/>
+			<ExtendedTooltip name="ТаблицаОшибокРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ТаблицаОшибокСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>ТаблицаОшибок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОшибокСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="ТаблицаОшибокСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОшибокСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>ТаблицаОшибок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОшибокСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ТаблицаОшибокСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОшибокУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>ТаблицаОшибок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОшибокУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТаблицаОшибокУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаОшибокМеханизм" id="33">
+					<DataPath>ТаблицаОшибок.Механизм</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокМеханизмКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ТаблицаОшибокМеханизмРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокИмя" id="18">
+					<DataPath>ТаблицаОшибок.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокИмяКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ТаблицаОшибокИмяРасширеннаяПодсказка" id="20"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокПредставление" id="21">
+					<DataPath>ТаблицаОшибок.Представление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокПредставлениеКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ТаблицаОшибокПредставлениеРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокОбъектМетаданных" id="24">
+					<DataPath>ТаблицаОшибок.ОбъектМетаданных</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокОбъектМетаданныхКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТаблицаОшибокОбъектМетаданныхРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="ТаблицаОшибокСсылка" id="27">
+					<DataPath>ТаблицаОшибок.Ссылка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОшибокСсылкаКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТаблицаОшибокСсылкаРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаОшибокАвтоматическоеИсправление" id="30">
+					<DataPath>ТаблицаОшибок.АвтоматическоеИсправление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаОшибокАвтоматическоеИсправлениеКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТаблицаОшибокАвтоматическоеИсправлениеРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.А1И_ТестированиеМеханизмов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаОшибок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ошибок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектМетаданных" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="АвтоматическоеИсправление" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматическое исправление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Механизм" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Механизм</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьОшибки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать ошибки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьОшибки</Action>
+		</Command>
+		<Command name="ИсправитьОшибки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить ошибки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсправитьОшибки</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Работа с таблицей значений</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗагрузитьТаблицуИзФайла" id="28">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьТаблицуИзФайла</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.OpenFile</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаЗагрузитьТаблицуИзФайлаРасширеннаяПодсказка" id="99"/>
+			</Button>
+			<Button name="ФормаСохранитьТаблицуВФайл" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьТаблицуВФайл</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.SaveFile</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаСохранитьТаблицуВФайлРасширеннаяПодсказка" id="100"/>
+			</Button>
+			<Button name="ФормаРедактироватьКолонки" id="2">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.РедактироватьКолонки</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.DataCompositionOutputParameters</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаРедактироватьКолонкиРасширеннаяПодсказка" id="101"/>
+			</Button>
+			<Button name="ФормаВыгрузитьВОбъект" id="29">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ВыгрузитьВОбъект</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьВОбъектРасширеннаяПодсказка" id="102"/>
+			</Button>
+			<Button name="ФормаСоздатьТекстЗапросаКТЧ" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьТекстЗапросаКТЧ</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьТекстЗапросаКТЧРасширеннаяПодсказка" id="103"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаТело" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тело</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тело</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТелоРасширеннаяПодсказка" id="104"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаТаблицы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица значений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа таблицы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаТаблицыРасширеннаяПодсказка" id="105"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="ОтсутствиеТаблицы" id="146">
+							<DataPath>ОтсутствиеТаблицы</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<VerticalScrollBar>true</VerticalScrollBar>
+							<HorizontalScrollBar>true</HorizontalScrollBar>
+							<ContextMenu name="ОтсутствиеТаблицыКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="ОтсутствиеТаблицыРасширеннаяПодсказка" id="148"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРедактораКолонок" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактор колонок (добавление, удаление, изменение типа)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа редактора колонок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРедактораКолонокРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<Table name="ОписаниеКолонок" id="6">
+							<Representation>List</Representation>
+							<SelectionMode>SingleRow</SelectionMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ОписаниеКолонок</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОписаниеКолонокКонтекстноеМеню" id="7"/>
+							<AutoCommandBar name="ОписаниеКолонокКоманднаяПанель" id="8"/>
+							<ExtendedTooltip name="ОписаниеКолонокРасширеннаяПодсказка" id="107"/>
+							<SearchStringAddition name="ОписаниеКолонокСтрокаПоиска" id="108">
+								<AdditionSource>
+									<Item>ОписаниеКолонок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОписаниеКолонокСтрокаПоискаКонтекстноеМеню" id="109"/>
+								<ExtendedTooltip name="ОписаниеКолонокСтрокаПоискаРасширеннаяПодсказка" id="110"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОписаниеКолонокСостояниеПросмотра" id="111">
+								<AdditionSource>
+									<Item>ОписаниеКолонок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОписаниеКолонокСостояниеПросмотраКонтекстноеМеню" id="112"/>
+								<ExtendedTooltip name="ОписаниеКолонокСостояниеПросмотраРасширеннаяПодсказка" id="113"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОписаниеКолонокУправлениеПоиском" id="114">
+								<AdditionSource>
+									<Item>ОписаниеКолонок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОписаниеКолонокУправлениеПоискомКонтекстноеМеню" id="115"/>
+								<ExtendedTooltip name="ОписаниеКолонокУправлениеПоискомРасширеннаяПодсказка" id="116"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ОписаниеКолонокПриОкончанииРедактирования</Event>
+								<Event name="BeforeAddRow">ОписаниеКолонокПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ОписаниеКолонокПередУдалением</Event>
+								<Event name="BeforeEditEnd">ОписаниеКолонокПередОкончаниемРедактирования</Event>
+								<Event name="OnChange">ОписаниеКолонокПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ОписаниеКолонокИмяКолонки" id="9">
+									<DataPath>ОписаниеКолонок.ИмяКолонки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ОписаниеКолонокИмяКолонкиКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ОписаниеКолонокИмяКолонкиРасширеннаяПодсказка" id="117"/>
+								</InputField>
+								<InputField name="ОписаниеКолонокТипДанных" id="11">
+									<DataPath>ОписаниеКолонок.ТипДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеКолонокТипДанныхКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="ОписаниеКолонокТипДанныхРасширеннаяПодсказка" id="118"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаМодуль" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модуль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа модуль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаМодульРасширеннаяПодсказка" id="119"/>
+			<ChildItems>
+				<CommandBar name="ГруппаКомандыМодуля" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды модуля</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды модуля</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКомандыМодуляРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<Button name="ВыполнитьКод" id="35">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ВыполнитьКод</CommandName>
+							<ExtendedTooltip name="ВыполнитьКодРасширеннаяПодсказка" id="121"/>
+						</Button>
+						<Button name="ДобавитьКомментарий" id="142">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ДобавитьКомментарий</CommandName>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ДобавитьКомментарийРасширеннаяПодсказка" id="143"/>
+						</Button>
+						<Button name="УдалитьКомментарий" id="144">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.УдалитьКомментарий</CommandName>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="УдалитьКомментарийРасширеннаяПодсказка" id="145"/>
+						</Button>
+						<Button name="ОчиститьТекстМодуля" id="98">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ОчиститьТекстМодуля</CommandName>
+							<ExtendedTooltip name="ОчиститьТекстМодуляРасширеннаяПодсказка" id="125"/>
+						</Button>
+						<Popup name="ГруппаШаблоны" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шаблоны</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шаблоны</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаШаблоныРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<Button name="СоздатьТекстЦикла" id="36">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьТекстЦикла</CommandName>
+									<ExtendedTooltip name="СоздатьТекстЦиклаРасширеннаяПодсказка" id="122"/>
+								</Button>
+								<Button name="СоздатьТекстПроведенияДокументов" id="37">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьТекстПроведенияДокументов</CommandName>
+									<ExtendedTooltip name="СоздатьТекстПроведенияДокументовРасширеннаяПодсказка" id="123"/>
+								</Button>
+								<Button name="СоздатьТекстПолученияУникальногоИдентификатора" id="67">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьТекстПолученияУникальногоИдентификатора</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уникальный идентификатор</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СоздатьТекстПолученияУникальногоИдентификатораРасширеннаяПодсказка" id="124"/>
+								</Button>
+								<Button name="СоздатьТекстПолученияУникальногоИдентификатора_ДобавитьКолонкуВТЗ" id="132">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьТекстПолученияУникальногоИдентификатора_ДобавитьКолонкуВТЗ</CommandName>
+									<ExtendedTooltip name="СоздатьТекстПолученияУникальногоИдентификатора_ДобавитьКолонкуВТЗРасширеннаяПодсказка" id="133"/>
+								</Button>
+								<Button name="СоздатьТекстОбработкиДвиженийРегистраБухгалтерии" id="134">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьТекстОбработкиДвиженийРегистраБухгалтерии</CommandName>
+									<ExtendedTooltip name="СоздатьТекстОбработкиДвиженийРегистраБухгалтерииРасширеннаяПодсказка" id="135"/>
+								</Button>
+								<Button name="СоздатьТекстПометкиНаУдаление" id="149">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьТекстПометкиНаУдаление</CommandName>
+									<ExtendedTooltip name="СоздатьТекстПометкиНаУдалениеРасширеннаяПодсказка" id="150"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Popup name="ГруппаXML" id="138">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>XML</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа XML</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаXMLРасширеннаяПодсказка" id="139"/>
+							<ChildItems>
+								<Button name="Выгрузить_В_XML" id="136">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Выгрузить_В_XML</CommandName>
+									<ExtendedTooltip name="Выгрузить_В_XMLРасширеннаяПодсказка" id="137"/>
+								</Button>
+								<Button name="ЗагрузкаИз_XML" id="140">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗагрузкаИз_XML</CommandName>
+									<ExtendedTooltip name="ЗагрузкаИз_XMLРасширеннаяПодсказка" id="141"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+				<TextDocumentField name="ТекстовыйДокумент" id="32">
+					<DataPath>ТекстовыйДокумент</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ТекстовыйДокументКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТекстовыйДокументРасширеннаяПодсказка" id="126"/>
+				</TextDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ГруппаКомПанель" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ком панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ком панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаКомПанельРасширеннаяПодсказка" id="127"/>
+			<ChildItems>
+				<Button name="ОК" id="25">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ОК</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОК (сохранить изменения)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="128"/>
+				</Button>
+				<Button name="Отмена" id="26">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Отмена</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="129"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.А1И_КонсольЗапросов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИмяКолонки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя колонки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеКолонок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание колонок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяКолонки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипДанных" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсходноеИмяКолонки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходное имя колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Таблица" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстовыйДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текстовый документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтсутствиеТаблицы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отсутствие таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+			<Settings xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:SpreadsheetDocument">
+				<mxl:columns>
+					<mxl:size>2</mxl:size>
+					<mxl:columnsItem>
+						<mxl:index>0</mxl:index>
+						<mxl:column>
+							<mxl:formatIndex>1</mxl:formatIndex>
+						</mxl:column>
+					</mxl:columnsItem>
+					<mxl:columnsItem>
+						<mxl:index>1</mxl:index>
+						<mxl:column>
+							<mxl:formatIndex>2</mxl:formatIndex>
+						</mxl:column>
+					</mxl:columnsItem>
+				</mxl:columns>
+				<mxl:rowsItem>
+					<mxl:index>0</mxl:index>
+					<mxl:indexTo>1</mxl:indexTo>
+					<mxl:row>
+						<mxl:empty>true</mxl:empty>
+					</mxl:row>
+				</mxl:rowsItem>
+				<mxl:rowsItem>
+					<mxl:index>2</mxl:index>
+					<mxl:row>
+						<mxl:c>
+							<mxl:i>1</mxl:i>
+							<mxl:c>
+								<mxl:f>3</mxl:f>
+								<mxl:tl>
+									<v8:item>
+										<v8:lang>#</v8:lang>
+										<v8:content>Редактор таблиц значений пуст.</v8:content>
+									</v8:item>
+								</mxl:tl>
+							</mxl:c>
+						</mxl:c>
+					</mxl:row>
+				</mxl:rowsItem>
+				<mxl:rowsItem>
+					<mxl:index>3</mxl:index>
+					<mxl:row>
+						<mxl:formatIndex>4</mxl:formatIndex>
+						<mxl:c>
+							<mxl:i>1</mxl:i>
+							<mxl:c>
+								<mxl:f>5</mxl:f>
+							</mxl:c>
+						</mxl:c>
+					</mxl:row>
+				</mxl:rowsItem>
+				<mxl:defaultFormatIndex>6</mxl:defaultFormatIndex>
+				<mxl:height>4</mxl:height>
+				<mxl:vgRows>4</mxl:vgRows>
+				<mxl:font faceName="Arial" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+				<mxl:format>
+					<mxl:width>43</mxl:width>
+				</mxl:format>
+				<mxl:format>
+					<mxl:width>432</mxl:width>
+				</mxl:format>
+				<mxl:format>
+					<mxl:font>0</mxl:font>
+					<mxl:textColor>#000080</mxl:textColor>
+					<mxl:textPlacement>Wrap</mxl:textPlacement>
+				</mxl:format>
+				<mxl:format>
+					<mxl:height>0</mxl:height>
+				</mxl:format>
+				<mxl:format>
+					<mxl:font>0</mxl:font>
+					<mxl:textColor>#003366</mxl:textColor>
+					<mxl:textPlacement>Wrap</mxl:textPlacement>
+				</mxl:format>
+				<mxl:format>
+					<mxl:width>72</mxl:width>
+				</mxl:format>
+				<mxl:textDirection>LeftToRight</mxl:textDirection>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РедактироватьКолонки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать колонки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать колонки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РедактироватьКолонки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОК" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отмена" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьТаблицуВФайл" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить таблицу в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить таблицу в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьТаблицуВФайл</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьТаблицуИзФайла" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить таблицу из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить таблицу из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьТаблицуИзФайла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьВОбъект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в объект</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в объект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Next</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьВОбъект</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстЗапросаКТЧ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст запроса к ТЧ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст запроса КТЧ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizard</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьТекстЗапросаКТЧ</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьКод" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьКод</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстПроведенияДокументов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст проведения документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекстПроведенияДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстЦикла" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цикл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст цикла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекстЦикла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстПолученияУникальногоИдентификатора" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст получения уникального идентификатора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст получения уникального идентификатора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекстПолученияУникальногоИдентификатора</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьТекстМодуля" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить текст модуля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить текст модуля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьТекстМодуля</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстПолученияУникальногоИдентификатора_ДобавитьКолонкуВТЗ" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст получения уникального идентификатора + добавить колонку в ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст получения уникального идентификатора добавить колонку ВТЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекстПолученияУникальногоИдентификатора_ДобавитьКолонкуВТЗ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстОбработкиДвиженийРегистраБухгалтерии" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст обработки движений регистра бухгалтерии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст обработки движений регистра бухгалтерии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекстОбработкиДвиженийРегистраБухгалтерии</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Выгрузить_В_XML" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в XML</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в XML</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить_В_XML</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузкаИз_XML" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка из XML</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка из XML</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузкаИз_XML</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьКомментарий" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закомментировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить комментарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Num /</Shortcut>
+			<Action>ДобавитьКомментарий</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьКомментарий" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить комментарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+Num /</Shortcut>
+			<Action>УдалитьКомментарий</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьТекстПометкиНаУдаление" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст пометки на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текст пометки на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекстПометкиНаУдаление</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОтборПараметрЗапроса">
+			<Type/>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ОбъектПутьКХранилищу">
+			<Type/>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ПараметрАдрес">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>
