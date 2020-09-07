@@ -11,10 +11,6 @@
 				<xr:ObjectId>05ef2898-de32-4bb7-9d24-5a54fb9134d9</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
-				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>bd80b606-be1d-442c-a7bc-4540f9d23fa7</xr:ObjectId>
-			</xr:ContainedObject>
-			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
 				<xr:ObjectId>3f2f8256-1ba6-41f0-92a3-6fe9535f5442</xr:ObjectId>
 			</xr:ContainedObject>
@@ -25,6 +21,10 @@
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
 				<xr:ObjectId>50dd8fc3-fc7f-47c9-b6be-2dd2ada21b2c</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>bd80b606-be1d-442c-a7bc-4540f9d23fa7</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
@@ -52,7 +52,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Коллектив программистов "А1"</Vendor>
-			<Version>2020-08-24</Version>
+			<Version>2020-09-07</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -63,13 +63,18 @@
 			<Language>Русский</Language>
 			<Subsystem>А1И_ОсновнаяПодсистема</Subsystem>
 			<Role>А1И_Инструменты</Role>
+			<CommonTemplate>А1И_А1Зависимости</CommonTemplate>
+			<CommonModule>А1И_А1СписокМеханизмов</CommonModule>
+			<CommonModule>А1И_ПомошникКонтроляВерсий</CommonModule>
 			<Catalog>Пользователи</Catalog>
 			<DataProcessor>А1И_АнализПрав</DataProcessor>
 			<DataProcessor>А1И_ГенераторКодаМеханизмов</DataProcessor>
 			<DataProcessor>А1И_ДымовоеТестирование</DataProcessor>
 			<DataProcessor>А1И_ЗапускПодПользователем</DataProcessor>
 			<DataProcessor>А1И_КонсольЗапросов</DataProcessor>
+			<DataProcessor>А1И_КонсольКода</DataProcessor>
 			<DataProcessor>А1И_МенеджерПакетов</DataProcessor>
+			<DataProcessor>А1И_ПомошникКонтроляВерсий</DataProcessor>
 			<DataProcessor>А1И_ТестированиеМеханизмов</DataProcessor>
 		</ChildObjects>
 	</Configuration>
