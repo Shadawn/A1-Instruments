@@ -177,7 +177,6 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Form>Форма</Form>
 			<Form>ФормаУправляемая</Form>
 		</ChildObjects>
 	</DataProcessor>

@@ -28,19 +28,6 @@
 			<Comment/>
 			<ObjectBelonging>Adopted</ObjectBelonging>
 		</Properties>
-		<ChildObjects>
-			<Attribute uuid="4417f024-cd33-442c-9703-28963c849611">
-				<InternalInfo/>
-				<Properties>
-					<Name>ИдентификаторПользователяИБ</Name>
-					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<ExtendedConfigurationObject>9c1325af-7492-42be-b3af-51b692534510</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>v8:UUID</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-		</ChildObjects>
+		<ChildObjects/>
 	</Catalog>
 </MetaDataObject>
