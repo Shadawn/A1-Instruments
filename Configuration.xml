@@ -52,7 +52,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Коллектив программистов "А1"</Vendor>
-			<Version>2021-01-22</Version>
+			<Version>2021-01-28</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -67,6 +67,7 @@
 			<CommonModule>А1И_А1СписокМеханизмов</CommonModule>
 			<CommonModule>А1И_ПомошникКонтроляВерсий</CommonModule>
 			<Catalog>Пользователи</Catalog>
+			<Report>А1И_Механизмы</Report>
 			<DataProcessor>А1И_АнализПрав</DataProcessor>
 			<DataProcessor>А1И_ГенераторКодаМеханизмов</DataProcessor>
 			<DataProcessor>А1И_ДымовоеТестирование</DataProcessor>
