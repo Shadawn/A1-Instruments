@@ -3,115 +3,194 @@
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<Table name="Пакеты" id="1">
-			<Representation>List</Representation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Пакеты</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ПакетыКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="ПакетыКоманднаяПанель" id="3">
-				<ChildItems>
-					<Button name="ПакетыОтметитьВсеОбновления" id="35">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ОтметитьВсеОбновления</CommandName>
-						<ExtendedTooltip name="ПакетыОтметитьВсеОбновленияРасширеннаяПодсказка" id="36"/>
-					</Button>
-					<Button name="ПакетыУстановитьОтмеченные" id="37">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.УстановитьОтмеченные</CommandName>
-						<ExtendedTooltip name="ПакетыУстановитьОтмеченныеРасширеннаяПодсказка" id="38"/>
-					</Button>
-					<Button name="ПакетыСкачатьТекущий" id="39">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.СкачатьТекущий</CommandName>
-						<ExtendedTooltip name="ПакетыСкачатьТекущийРасширеннаяПодсказка" id="40"/>
-					</Button>
-				</ChildItems>
-			</AutoCommandBar>
-			<ExtendedTooltip name="ПакетыРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="ПакетыСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>Пакеты</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ПакетыСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="ПакетыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ПакетыСостояниеПросмотра" id="8">
-				<AdditionSource>
-					<Item>Пакеты</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ПакетыСостояниеПросмотраКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="ПакетыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ПакетыУправлениеПоиском" id="11">
-				<AdditionSource>
-					<Item>Пакеты</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ПакетыУправлениеПоискомКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="ПакетыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-			</SearchControlAddition>
+		<Pages name="Страницы" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="45"/>
 			<ChildItems>
-				<CheckBoxField name="ПакетыОтметка" id="29">
-					<DataPath>Пакеты.Отметка</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПакетыОтметкаКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ПакетыОтметкаРасширеннаяПодсказка" id="31"/>
-				</CheckBoxField>
-				<InputField name="ПакетыИмя" id="14">
-					<DataPath>Пакеты.Имя</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПакетыИмяКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ПакетыИмяРасширеннаяПодсказка" id="16"/>
-				</InputField>
-				<InputField name="ПакетыВерсияДоступная" id="17">
-					<DataPath>Пакеты.ВерсияДоступная</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПакетыВерсияДоступнаяКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="ПакетыВерсияДоступнаяРасширеннаяПодсказка" id="19"/>
-				</InputField>
-				<InputField name="ПакетыВерсияТекущая" id="32">
-					<DataPath>Пакеты.ВерсияТекущая</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПакетыВерсияТекущаяКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ПакетыВерсияТекущаяРасширеннаяПодсказка" id="34"/>
-				</InputField>
-				<InputField name="ПакетыОписание" id="20">
-					<DataPath>Пакеты.Описание</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>40</Width>
-					<ContextMenu name="ПакетыОписаниеКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="ПакетыОписаниеРасширеннаяПодсказка" id="22"/>
-				</InputField>
-				<InputField name="ПакетыСсылкаЗагрузки" id="23">
-					<DataPath>Пакеты.СсылкаЗагрузки</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПакетыСсылкаЗагрузкиКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ПакетыСсылкаЗагрузкиРасширеннаяПодсказка" id="25"/>
-				</InputField>
-				<CheckBoxField name="ПакетыСодержитДанные" id="26">
-					<DataPath>Пакеты.ИзменяетДанные</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПакетыСодержитДанныеКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ПакетыСодержитДанныеРасширеннаяПодсказка" id="28"/>
-				</CheckBoxField>
+				<Page name="СтраницаПакеты" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пакеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пакеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПакетыРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<Table name="Пакеты" id="1">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Пакеты</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПакетыКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ПакетыКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="ПакетыОтметитьВсеОбновления" id="35">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтметитьВсеОбновления</CommandName>
+										<ExtendedTooltip name="ПакетыОтметитьВсеОбновленияРасширеннаяПодсказка" id="36"/>
+									</Button>
+									<Button name="ПакетыУстановитьОтмеченные" id="37">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьОтмеченные</CommandName>
+										<ExtendedTooltip name="ПакетыУстановитьОтмеченныеРасширеннаяПодсказка" id="38"/>
+									</Button>
+									<Button name="ПакетыСкачатьТекущий" id="39">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СкачатьТекущий</CommandName>
+										<ExtendedTooltip name="ПакетыСкачатьТекущийРасширеннаяПодсказка" id="40"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПакетыРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ПакетыСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>Пакеты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПакетыСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ПакетыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПакетыСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>Пакеты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПакетыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ПакетыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПакетыУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>Пакеты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПакетыУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ПакетыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ПакетыОтметка" id="29">
+									<DataPath>Пакеты.Отметка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПакетыОтметкаКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ПакетыОтметкаРасширеннаяПодсказка" id="31"/>
+								</CheckBoxField>
+								<InputField name="ПакетыИмя" id="14">
+									<DataPath>Пакеты.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПакетыИмяКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ПакетыИмяРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ПакетыСхемаВерсий" id="41">
+									<DataPath>Пакеты.СхемаВерсий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПакетыСхемаВерсийКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ПакетыСхемаВерсийРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ПакетыВерсияДоступная" id="17">
+									<DataPath>Пакеты.ВерсияДоступная</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПакетыВерсияДоступнаяКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ПакетыВерсияДоступнаяРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ПакетыВерсияТекущая" id="32">
+									<DataPath>Пакеты.ВерсияТекущая</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПакетыВерсияТекущаяКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ПакетыВерсияТекущаяРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ПакетыОписание" id="20">
+									<DataPath>Пакеты.Описание</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>40</Width>
+									<ContextMenu name="ПакетыОписаниеКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ПакетыОписаниеРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ПакетыЗависимости__Представление" id="57">
+									<DataPath>Пакеты.Зависимости__Представление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПакетыЗависимости__ПредставлениеКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПакетыЗависимости__ПредставлениеРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ПакетыСсылкаЗагрузки" id="23">
+									<DataPath>Пакеты.СсылкаЗагрузки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПакетыСсылкаЗагрузкиКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ПакетыСсылкаЗагрузкиРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<CheckBoxField name="ПакетыСодержитДанные" id="26">
+									<DataPath>Пакеты.ИзменяетДанные</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПакетыСодержитДанныеКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПакетыСодержитДанныеРасширеннаяПодсказка" id="28"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаМеханизмы" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Механизмы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Механизмы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМеханизмыРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<LabelDecoration name="Механизмы__Предупреждение" id="50">
+							<ContextMenu name="Механизмы__ПредупреждениеКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="Механизмы__ПредупреждениеРасширеннаяПодсказка" id="52"/>
+						</LabelDecoration>
+						<Button name="Механизмы__Установить" id="55">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Механизмы__Установить</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="Механизмы__УстановитьРасширеннаяПодсказка" id="56"/>
+						</Button>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</Table>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -239,6 +318,56 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="СхемаВерсий" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема версий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоступнаяБольшеТекущей" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступная больше текущей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Зависимости" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зависимости</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Зависимости__Представление" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зависимости</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Путь" id="3">
@@ -276,6 +405,38 @@
 						<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
+				<dcsset:presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Текущая версия больше доступной</v8:content>
+					</v8:item>
+				</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Пакеты</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Пакеты.ДоступнаяБольшеТекущей</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Доступная версия больше текущей</v8:content>
+					</v8:item>
+				</dcsset:presentation>
 			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
@@ -324,6 +485,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СкачатьТекущий</Action>
+		</Command>
+		<Command name="Механизмы__Установить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Механизмы установить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Механизмы установить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьМеханизмы</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -22,11 +22,36 @@
 			<ContextMenu name="ВерсияФорматаКонтекстноеМеню" id="7"/>
 			<ExtendedTooltip name="ВерсияФорматаРасширеннаяПодсказка" id="8"/>
 		</InputField>
-		<Button name="Генерировать" id="1">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Генерировать</CommandName>
-			<ExtendedTooltip name="ГенерироватьРасширеннаяПодсказка" id="2"/>
-		</Button>
+		<UsualGroup name="ГруппаКнопки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Button name="Генерировать" id="1">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Генерировать</CommandName>
+					<ExtendedTooltip name="ГенерироватьРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="Установить" id="9">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Установить</CommandName>
+					<ExtendedTooltip name="УстановитьРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -87,6 +112,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Генерировать</Action>
+		</Command>
+		<Command name="Установить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Установить</Action>
 		</Command>
 	</Commands>
 </Form>
