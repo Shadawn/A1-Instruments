@@ -52,7 +52,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Коллектив программистов "А1"</Vendor>
-			<Version>2021-08-04</Version>
+			<Version>2021-08-18</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -64,11 +64,13 @@
 			<Subsystem>А1И_ОсновнаяПодсистема</Subsystem>
 			<Role>А1И_Инструменты</Role>
 			<CommonTemplate>А1И_А1Зависимости</CommonTemplate>
+			<CommonTemplate>А1И_ПустаяФайловаяБаза</CommonTemplate>
 			<CommonModule>А1И</CommonModule>
 			<CommonModule>А1И_А1СписокМеханизмов</CommonModule>
 			<CommonModule>А1И_Версии</CommonModule>
 			<CommonModule>А1И_Общее</CommonModule>
-			<CommonModule>А1И_ПомошникКонтроляВерсий</CommonModule>
+			<CommonModule>А1И_ПомощникКонтроляВерсий</CommonModule>
+			<CommonModule>А1И_ПомощникРаботыСМеханизмами</CommonModule>
 			<Catalog>Пользователи</Catalog>
 			<Report>А1И_Механизмы</Report>
 			<DataProcessor>А1И_АнализПрав</DataProcessor>
@@ -78,9 +80,10 @@
 			<DataProcessor>А1И_КонсольЗапросов</DataProcessor>
 			<DataProcessor>А1И_КонсольКода</DataProcessor>
 			<DataProcessor>А1И_МенеджерПакетов</DataProcessor>
-			<DataProcessor>А1И_ПомошникКонтроляВерсий</DataProcessor>
-			<DataProcessor>А1И_ТестированиеМеханизмов</DataProcessor>
+			<DataProcessor>А1И_ПомощникКонтроляВерсий</DataProcessor>
+			<DataProcessor>А1И_ПомощникРаботыСМеханизмами</DataProcessor>
 			<DataProcessor>А1И_ТестированиеАПИ</DataProcessor>
+			<DataProcessor>А1И_ТестированиеМеханизмов</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
