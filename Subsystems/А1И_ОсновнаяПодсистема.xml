@@ -23,8 +23,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ДымовоеТестирование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_МенеджерПакетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_КонсольКода</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ПомошникКонтроляВерсий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ПомощникКонтроляВерсий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.А1И_Механизмы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ПомощникРаботыСМеханизмами</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
