@@ -478,6 +478,7 @@
 													<HorizontalStretch>false</HorizontalStretch>
 													<ChoiceButton>true</ChoiceButton>
 													<ClearButton>true</ClearButton>
+													<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
 													<ChoiceListButton>false</ChoiceListButton>
 													<ContextMenu name="ПараметрыЗначениеКонтекстноеМеню" id="20"/>
 													<ExtendedTooltip name="ПараметрыЗначениеРасширеннаяПодсказка" id="888"/>
