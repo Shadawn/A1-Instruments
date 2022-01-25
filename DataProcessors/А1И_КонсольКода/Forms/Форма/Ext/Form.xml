@@ -14,6 +14,11 @@
 				<CommandName>Form.Command.НаСервере</CommandName>
 				<ExtendedTooltip name="ФормаНаСервереРасширеннаяПодсказка" id="7"/>
 			</Button>
+			<Button name="ФормаДобавитьПоля" id="8">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьПоля</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьПоляРасширеннаяПодсказка" id="9"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
@@ -79,6 +84,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НаСервере</Action>
+		</Command>
+		<Command name="ДобавитьПоля" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Добавить поля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Добавить поля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьПоля</Action>
 		</Command>
 	</Commands>
 </Form>
