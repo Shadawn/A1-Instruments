@@ -26,7 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ПомощникКонтроляВерсий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.А1И_Механизмы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ПомощникРаботыСМеханизмами</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">4519ee0e-f04b-4ed1-9a83-88979c4dc559</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.А1И_ПомощникРаботыСИдентификаторами</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
